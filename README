@@ -1,0 +1,55 @@
+--------------------------------------------------------------------------------
+
+Non Realistic Video Effects
+(c) 2010 Petr Nohejl
+
+Projekt Non Realistic Video Effects byl vytvoøen v rámci pøedmìtu PGP
+(Pokroèilá poèítaèová grafika) na FIT VUT v Brnì spolu s Petrem Panáèkem.
+
+Cílem práce bylo nastudovat metody používané v nerealistickém zobrazování videa.
+Dále zhodnotit možnosti metod pro zpracování videa (stabilita mezi framy, 
+plynulost pohybù apod.), navrhnout a implementovat aplikaci realizující vybraný
+efekt na videosekvenci. Demonstrovat dosažené výsledky na vhodných vstupech a
+vyhodnotit.
+
+V rámci projektu jsme implementovali aplikaci demonstrující 3 video efekty:
+komiksový efekt, mozaikový efekt a malíøský efekt. Souèástí projektu je 
+dokumentace, popisující výpoèet tìchto efektù.
+	            
+--------------------------------------------------------------------------------
+
+Sestavení a spuštìní projektu:
+
+Program je implementován v jazyce C/C++, v prostøedí Visual Studio 2008.
+Používá knihovnu OpenCV. Pro úspìšné sestavení projektu je nutné mít
+nainstalovanou tuto knihovnu a správnì definovány v nastavení projektu 
+knihovny pro linker.
+
+--------------------------------------------------------------------------------
+
+Aplikace VideoEffects:
+
+Aplikace demonstruje 3 video efekty: komiksový efekt, mozaikový efekt a 
+malíøský efekt. Vstupem programu je typ efektu a název video souboru ve formátu
+AVI. Výstupem jsou dvì okna, zobrazující video. První ukazuje originální obraz,
+druhé zobrazuje vyrenderovaný obraz, na který byl aplikován daný efekt.
+
+--------------------------------------------------------------------------------
+
+Usage:
+
+VideoEffects.exe -h               - show help
+VideoEffects.exe -c inputVideo    - demonstrate comic effect
+VideoEffects.exe -p inputVideo    - demonstrate painterly effect
+VideoEffects.exe -m inputVideo    - demonstrate mosaic effect
+
+inputVideo is name of video file in AVI format
+
+--------------------------------------------------------------------------------
+
+Rozdìlení práce:
+
+Petr Nohejl: základ aplikace, komiksový efekt, mozaika, dokumentace
+Petr Panáèek: základ aplikace, komiksový efekt, malíøský efekt
+
+--------------------------------------------------------------------------------
